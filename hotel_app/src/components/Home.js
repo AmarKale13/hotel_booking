@@ -203,7 +203,7 @@ const HomePage = () => {
                       <h3 className="hotel-name">{hotel.name}</h3>
                       <p className="hotel-location">{hotel.location}</p>
                       <p className="hotel-description">{hotel.description}</p>
-                      <p className="hotel-price">From ${hotel.pricePerNight} per night</p>
+                      <p className="hotel-price">From ₹{hotel.pricePerNight} per night</p>
                       <p className="hotel-rating">Rating: {generateRating(hotel._id)} / 5</p>
                       <Link to={`/hotels/${hotel._id}`}>
                         <button className="view-details-btn">View Details</button>
