@@ -1,0 +1,160 @@
+/* HotelDetails.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --accent-color: #28a745;
+  --light-color: #f8f9fa;
+  --dark-color: #343a40;
+  --font-family: 'Roboto', sans-serif;
+}
+
+.hotel-details-container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.hotel-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.hotel-main-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.hotel-main-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.hotel-main-image img:hover {
+  transform: scale(1.05);
+}
+
+.hotel-info-header {
+  flex: 1 1 300px;
+}
+
+.hotel-info-header h1 {
+  margin-top: 0;
+  color: var(--dark-color);
+}
+
+.hotel-location {
+  font-size: 1.1rem;
+  color: var(--secondary-color);
+  margin: 0.5rem 0;
+}
+
+.price-section {
+  margin-top: 1rem;
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: var(--secondary-color);
+}
+
+.discounted-price {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.discount-label {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.hotel-rating {
+  font-size: 1rem;
+  color: var(--primary-color);
+  margin: 0.5rem 0;
+}
+
+.contact-info {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: var(--secondary-color);
+}
+
+.hotel-description h2 {
+  color: var(--primary-color);
+  /* margin-bottom: 0.5rem; */
+}
+
+.hotel-desc p {
+  color: var(--dark-color);
+  padding: 0.5rem 0;
+  font-size: 10px;
+}
+
+.hotel-amenities {
+  margin-bottom: 2rem;
+}
+
+.hotel-amenities h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.hotel-amenities ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.hotel-amenities li {
+  background: #e9ecef;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.hotel-images-gallery h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

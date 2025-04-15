@@ -1,0 +1,65 @@
+/* PaymentSuccess.css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  --primary-color: #007bff;
+  --dark-color: #343a40;
+  --light-color: #f8f9fa;
+  --font-family: 'Roboto', sans-serif;
+}
+
+.payment-success-container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  animation: fadeIn 0.5s ease-in-out;
+  text-align: center;
+}
+
+.payment-success-container h1 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.booking-summary {
+  text-align: left;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: var(--light-color);
+}
+
+.booking-summary p {
+  font-size: 1rem;
+  color: var(--dark-color);
+  margin: 0.5rem 0;
+}
+
+.print-bill {
+  margin-top: 2rem;
+}
+
+.print-bill button {
+  padding: 0.75rem 1.5rem;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.print-bill button:hover {
+  transform: scale(1.02);
+  background: #0056b3;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

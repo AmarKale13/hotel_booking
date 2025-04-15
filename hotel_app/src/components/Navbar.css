@@ -1,0 +1,136 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Align children at the ends */
+    align-items: center; /* Center items vertically */
+    background-color: #333;
+    padding: 10px 20px;
+  }
+  #heading{
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  #heading a{
+      list-style-type: none;
+      color: aqua;
+      text-decoration: none;
+    font-size: 30px;
+  }
+  
+  /* Upper section styles */
+
+  #List-property {
+    font-size: 1.5rem; /* Adjust size as needed */
+    font-weight: bold; /* Optional: makes it bold */
+    padding-right: 30px;
+    padding-bottom: 2px;
+}
+
+  #upper {
+    list-style-type: none;
+    /* margin: 0; */
+    padding-right: 5px;
+    display: flex;
+    gap: 25px; /* Space between list items */
+  }
+  
+  #upper li {
+    margin: 0;
+  }
+  
+  #upper a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease-out;
+    /* transition: text 0.3s ease-out; */
+  }
+  
+  #upper a:hover {
+    color: #ff9900;
+    
+  }
+  
+  /* Lower section styles */
+  #lower {
+    list-style-type: none;
+    margin: 0 auto; /* Center the list */
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Space between list items */
+  }
+  
+  #lower li {
+    margin: 0;
+  }
+  
+  #lower a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-out;
+  }
+  
+  #lower a:hover {
+    color: #ff9900;
+  }
+
+  .icon_style{
+    font-size: 25px;
+    color: aqua;
+  }
+
+  /* Dropdown Styling */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  .dropdown-btn {
+    background: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 10px;
+  }
+  .dropdown-menu {
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background: rgb(29, 21, 21);
+    /* color: orange; */
+    list-style: none;
+    padding: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    min-width: 150px;
+  }
+
+
+.dropdown-menu li {
+  padding: 10px;
+  text-align: left;
+}
+
+.dropdown-menu li a, 
+.dropdown-menu li button {
+  text-decoration: none;
+  color: red;
+  width: 100%;
+  background: none;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-menu li button:hover, 
+.dropdown-menu li a:hover {
+  /* background-color: #f0f0f0; */
+  /* border: solid blue; */
+  border-radius: 5px;
+}
+
+
+  
